@@ -98,10 +98,21 @@ code --install-extension target/rustlite-vscode-extension-1.0.0.vsix
 
 Example `.rlite` file:
 ```rlite
-fn main() {
-    let x = 10;
-    return x;
-}
+
+fn main() {}
+
+while variable > 0 {
+        println!("Countdown: {}", variable);
+        variable -= 1;
+    }
+
+for i in 0..variable {
+        println!("Iteration: {}", i);
+    }
+
+let variable = 10;
+
+{ // gives an error when empty brackets
 ```
 ![Syntax Highlighting](./assets/syntax.png)
 
