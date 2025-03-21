@@ -1,0 +1,45 @@
+{
+    "name": "rustlite-lsp-extension",
+    "displayName": "RustLite LSP Extension",
+    "description": "A VSCode extension that integrates the RustLite LSP server",
+    "version": "0.0.1",
+    "publisher": "your-name",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [
+      "onLanguage:rustlite"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+      "languages": [
+        {
+          "id": "rustlite",
+          "aliases": ["RustLite", "rustlite"],
+          "extensions": [".rlite"],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "rustlite",
+          "scopeName": "source.rustlite",
+          "path": "./syntaxes/rustlite.tmLanguage.json"
+        }
+      ]
+    },
+    "scripts": {
+      "vscode:prepublish": "echo 'No compilation needed for JS'",
+      "start": "node ./extension.js"
+    },
+    "devDependencies": {
+      "vscode": "^1.1.37"
+    },
+    "dependencies": {
+      "vscode-languageclient": "^7.0.0"
+    }
+  }
+  
