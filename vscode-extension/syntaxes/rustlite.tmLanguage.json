@@ -1,0 +1,20 @@
+{
+    "scopeName": "source.rustlite",
+    "patterns": [
+      {
+        "name": "keyword.control.rustlite",
+        "match": "\\b(function|variable)\\b"
+      },
+      {
+        "name": "string.quoted.double.rustlite",
+        "begin": "\"",
+        "end": "\""
+      },
+      {
+        "name": "comment.line.double-slash.rustlite",
+        "match": "//.*$"
+      }
+    ],
+    "repository": {}
+  }
+  
